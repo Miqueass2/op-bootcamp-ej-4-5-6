@@ -1,0 +1,23 @@
+@use "sass:map";
+
+$colorStyleHora:red;
+$colorStyleNames:rgb(126, 176, 138);
+$colorStyleAge:green;
+
+$theme-colors: (
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+);
+.horaStyle{
+   color:$colorStyleHora;
+}
+.namesStyle{
+   color:$colorStyleNames;
+}
+
+.ageStyle{
+   /* color:$colorStyleAge; */
+   color: map.get($theme-colors, "info");
+}
+
